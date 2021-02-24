@@ -19,7 +19,10 @@ for (i = 0; i < elements.length; i++) {
 hr.classList.remove('hrh');
 }, 1500);
 
-
+var btn = document.getElementById('navbarNav');
+btn.onclick = function() {
+ btn.className +="hidden";
+}
 
 function toogle(){
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
