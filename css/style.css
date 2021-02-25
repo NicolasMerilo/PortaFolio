@@ -422,8 +422,7 @@ background: rgb(54, 190, 217);
         width: 27.485%
     }
 }
-
-@media (max-width:298px) and (max-height:461px){
+@media (max-width:278px) and (max-height:469px){
 
     .text{
         top:5.4% !important;
