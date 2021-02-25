@@ -422,3 +422,13 @@ background: rgb(54, 190, 217);
         width: 27.485%
     }
 }
+
+@media (max-width:298px) and (max-height:461px){
+
+    .text{
+        top:5.4% !important;
+    }
+    .text2{
+        top:16% !important;
+    }
+}
