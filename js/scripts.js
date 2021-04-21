@@ -1,14 +1,17 @@
-
 var hr = document.querySelector("#hr");
 var elements = document.querySelectorAll("#text");
 var links = document.querySelectorAll(".nav-link");
 var btn = document.getElementById('navbarNav');
+var icon = document.getElementById('icon');
 
 document.addEventListener('DOMContentLoaded', function() {
   var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
   var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
   })
+
+  
+  icon.innerHTML = "🌙"
 
   for (var i = 0; i < links.length; i++) {
     var link = links[i];
@@ -19,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
       this.classList.add("active");
     };
+
   }
 
   setTimeout(() => { 
@@ -36,3 +40,13 @@ btn.addEventListener("click", function () {
   btn.className ="navbar-collapse justify-content-end collapse";
 })
 
+icon.addEventListener('click', function (){
+  document.body.classList.toggle("dark-theme");
+  
+  if(document.body.classList.contains("dark-theme")){
+  icon.innerHTML = "⭐"
+  }else{
+  icon.innerHTML = "🌙"
+  }
+
+})
