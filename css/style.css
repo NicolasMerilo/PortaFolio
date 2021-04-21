@@ -1,9 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
+:root{
+    --primary-color:#f5f9fa;
+    --secondary-color:#ebf3f5;
+    --text-color: black
+}
+
+.dark-theme{
+    --primary-color:#202122;
+    --secondary-color:#272a2b;
+    --text-color: #f5f9fa;
+}
+
+
+
 body{
     margin: 0;
     font-family: "Roboto";
-    background: linear-gradient(#f5f9fa,#ebf3f5);
+    background: linear-gradient(var(--primary-color),var(--secondary-color));
     
 }
 
@@ -12,12 +26,14 @@ h2{
     letter-spacing: .3rem;
     font-size:37px;
     font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
 }
 
 .txtnav{
     color: #f5f9fa !important;
 font-size: 17px;
 font-family: montserrat;
+flex: auto;
 }
 
 nav{
@@ -420,16 +436,5 @@ background: rgb(54, 190, 217);
 
     #current{
         width: 27.485%
-    }
-}
-
-
-@media (max-width:361px){
-    .text2{
-        top: 13.5%;
-    }
-
-    #principal{
-        height: 66px;
     }
 }
