@@ -1,9 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
+:root{
+    --primary-color:#f5f9fa;
+    --secondary-color:#ebf3f5;
+    --text-color: black;
+    --shadow-color: #c0c6c9;
+    --nav-color:#36bed9 ;
+}
+
+.dark-theme{
+    --primary-color:#202122;
+    --secondary-color:#272a2b;
+    --text-color: #f5f9fa;
+    --shadow-color: #373737;
+    --nav-color: #006a80;
+}
+
+
+
 body{
     margin: 0;
     font-family: "Roboto";
-    background: linear-gradient(#f5f9fa,#ebf3f5);
+    background: linear-gradient(var(--primary-color),var(--secondary-color));
     
 }
 
@@ -12,16 +30,18 @@ h2{
     letter-spacing: .3rem;
     font-size:37px;
     font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
 }
 
 .txtnav{
     color: #f5f9fa !important;
 font-size: 17px;
 font-family: montserrat;
+flex: auto;
 }
 
 nav{
-    background-color: #36bed9;
+    background-color: var(--nav-color);
     box-shadow: 0 0 10px 1px #4b4c4d;
     min-height: 50px;
     margin-bottom: 20px;
@@ -56,7 +76,7 @@ nav{
 }
 
 #Habilidades{
-    background-color:#36bed9 ;
+    background-color:var(--nav-color) ;
 }
 
 
@@ -100,8 +120,8 @@ nav{
     position: relative;
     margin: 0 auto;
     max-width: 399px;
-    -webkit-box-shadow: 0 0 10px #c0c6c9;
-    box-shadow: 0 0 10px #c0c6c9;
+    -webkit-box-shadow: 0 0 10px var(--shadow-color);
+    box-shadow: 0 0 10px var(--shadow-color);
 }
 
 .resp-img{
@@ -158,8 +178,8 @@ transition: all 0.3s ease-in-out 0s;
     visibility: visible;
 }
 .btnA:hover{
-    box-shadow: 0 0 10px #c0c6c9;
-    -webkit-box-shadow: 0 10px 10px #c0c6c9 ;
+    box-shadow: 0 0 10px var(--shadow-color);
+    -webkit-box-shadow: 0 10px 10px var(--shadow-color) ;
 }
 
 
@@ -277,8 +297,8 @@ background: rgb(54, 190, 217);
 .ExpHover:hover{
     background: rgb(54, 190, 217);
     transition: all 0.3s ease-in-out;
-    box-shadow: 0 0 10px #c0c6c9;
-    -webkit-box-shadow: 0 10px 10px #c0c6c9 ;
+    box-shadow: 0 0 10px var(--shadow-color);
+    -webkit-box-shadow: 0 10px 10px var(--shadow-color) ;
 }
 
 .footer{
