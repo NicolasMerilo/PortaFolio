@@ -4,6 +4,8 @@ var links = document.querySelectorAll(".nav-link");
 var btn = document.getElementById('navbarNav');
 var icon = document.getElementById('icon');
 
+var n2 = document.querySelector(".n2");
+
 document.addEventListener('DOMContentLoaded', function() {
   var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
   var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
@@ -11,6 +13,13 @@ document.addEventListener('DOMContentLoaded', function() {
   })
 
   
+
+
+setTimeout(() => {
+  n2.style.display='inline-block';
+}, 2499);
+
+
   icon.innerHTML = "🌙"
 
   for (var i = 0; i < links.length; i++) {
@@ -26,10 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   setTimeout(() => { 
-  for (i = 0; i < elements.length; i++) {
-      elements[i].classList.remove('hidden');
-  }
-  hr.classList.remove('hrh');
+  hr.style.display='block';
   }, 1500);
 
 })
