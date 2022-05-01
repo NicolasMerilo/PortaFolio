@@ -25,6 +25,68 @@ body{
     
 }
 
+
+.nsSup{
+	background-image: url(https://images.unsplash.com/photo-1642235558212-3abbae1aeaba?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=480&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY0MzMzMzMyNA&ixlib=rb-1.2.1&q=80&w=640);
+    background-position: center center;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-color: rgb(107 114 128/0.5);
+
+    min-height: 166px
+}
+
+/*Letras nav*/
+
+
+
+
+
+.ns{
+	display: inline-block;
+	font-family: 'Montserrat';
+	white-space: nowrap;
+	 overflow: hidden;
+	-webkit-animation: typing 2s steps(20), blink .5s infinite step-end alternate;
+	color:white;
+	
+    font-weight: 600;
+}
+
+.n1{
+  
+	width: 23ch;
+	font-size: 3rem
+}
+
+.n2{
+  display:none;
+  width:20ch;
+  font-size: 2rem  
+  
+}
+
+
+
+
+
+@-webkit-keyframes typing {
+	0%{width:0;border-right: 4px solid;}
+	100%{border-right: 4px solid;}
+}
+
+@keyframes blink {
+	50% { border-color: transparent}
+	
+}
+/*a*/
+a{
+    text-decoration: none;
+}
+
+
+
+
 h2{
     font-weight: 200;
     letter-spacing: .3rem;
@@ -328,107 +390,22 @@ background: rgb(54, 190, 217);
 }
 
 /*hidden*/
-#principal {
-    background: linear-gradient(#323333,#2a2b2b);
-    height:22vh;
-    display: flex;
-    font-family: 'Roboto';
-}
-
-
-.text, .text2 {
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    list-style: none;
-    height: 6vh;
-    border-bottom: 0;
-    padding-left: 0 !important;
-}
-
-.text2 {
-    top: 15%;
-}
-
-  
-.text li{
-    
-    font-size: 3vw;
-}
-
-.text2 li{
-    
-    font-size: 2vw;
-}
-
-.text li, .text2 li {
-    display: flex;
-    justify-content: center;
-    float: left;
-    font-weight: 300;
-    color: #fff;
-    opacity: 1;
-    transition: all 0.5s ease-in-out;
-    max-width: 3em;
-}
-
-.text.hidden li.spaced, .text2.hidden li.spaced {
-    padding-left: 0;
-}
-
-.text li.spaced, .text2 li.spaced2 {
-    padding-left: 0.5em
-}
-  
-.text.hidden li.ghost, .text2.hidden li.ghost, .text2.hidden li.spaced2 {
-    opacity: 0;
-    max-width: 0;
-}
-@media only screen and (max-width:1250px){
-    #principal{
-        height: 18vh;
-    }
-    
-    .text2 li{
-        position: relative;
-        bottom: 20%;
-    }
-}
-
-@media only screen and (max-width:800px){
-    #principal{
-        height: 15vh;
-    }
-    .text li{
-        margin-top:5px;
-    }
-    
-    .text2 li{
-        position: relative;
-        bottom: 50%;
-    }
-}
-
-@media only screen and (max-width:580px){
-    #principal{
-        height: 13vh;
-    }
-    .text li{
-        margin-top:10px;
-    }
-    
-    .text2 li{
-        position: relative;
-        bottom: 50%;
-    }
-}
 
 @media only screen and (max-width:768px){
     
 .col-xs-4 {
     width: 33.33333% !important;
 }
+
+
+    .n1{
+
+	font-size: 2rem!important;
+    }
+
+    .n2{
+	font-size:1.5rem;
+     }
 }
 
 
@@ -439,6 +416,7 @@ background: rgb(54, 190, 217);
     }
 
     #current{
-        width: 27.485%
+        width: 27.485%;
     }
+
 }
