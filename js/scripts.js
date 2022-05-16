@@ -56,3 +56,11 @@ icon.addEventListener('click', function (){
   }
 
 })
+
+c1.addEventListener('click', function (){
+  c1.classList.toggle("active"); 
+})
+
+c2.addEventListener('click', function (){
+  c2.classList.toggle("active"); 
+})
