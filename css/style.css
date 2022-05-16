@@ -309,15 +309,6 @@ box-shadow: 5px 5px 2px;
 
 /*Experiencia*/
 
-.ExpHover{
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    max-width: 200px;
-    border-radius: 10px; 
-    background: rgb(54, 190, 217);
-}
-
 .exp{
     width: 200px;
 background-color: #36bed9;
@@ -329,39 +320,46 @@ transition: opacity 0.4s ease-in-out;
 -webkit-transition: opacity 0.4s ease-in-out 0s;
 }
 
-.expT{
-    position: absolute;
-    text-decoration: none;
-    color: Black;
-    transition: all 0.3s ease-in-out 0s;
-    bottom:2%;
-    font-family: 'Montserrat';
-    font-style: oblique;
-    font-weight: 500;
-    opacity: 0;
-    letter-spacing: 0.15px;
-}
+.card{
+      width:200px;
+      height:200px;
+      position: relative;
+      background-color: transparent;
+      transition: transform .8s;
+      transform-style: preserve-3d;
+      border-radius: 1rem!important;
+      cursor: pointer;
+    }
+    .card.active {
+      transform: rotateY(180deg);
+      cursor: pointer;
+    }
+    .front, .back{
+      width:100%;
+      height:100%;
+      background-color: white;
+      position: absolute;
+      border-radius: 14px;
+      backface-visibility: hidden;
+      display: table-row;
+      justify-content: center;
+    }
 
+    .img{
+      width:100px;
+      height:100px;
+    }
 
-.ExpHover:hover .exp{
-opacity: 0;
-transition:opacity 0.3s ease-in-out 0s;
--webkit-transition: opacity 0.3s ease-in-out 0s;
-background: rgb(54, 190, 217);
-}
+    .back{
+      transform: rotateY(180deg);
+      background: #fff;
+      padding-top: 3.5rem;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 15px;
+    }
 
-.ExpHover:hover .expT{
-    opacity: 1;
-    transform: translate(0,-40px);
-    background: rgba(31, 28, 28, 0.048);
-}
+/*------*/
 
-.ExpHover:hover{
-    background: rgb(54, 190, 217);
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 0 10px var(--shadow-color);
-    -webkit-box-shadow: 0 10px 10px var(--shadow-color) ;
-}
 
 .footer{
     background-color: rgba(0, 0, 0, 0.79);
