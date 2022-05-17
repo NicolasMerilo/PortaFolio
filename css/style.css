@@ -426,16 +426,16 @@ transition: opacity 0.4s ease-in-out;
 
 @media only screen and (max-width:427px){
     .n1{
-	  width:20ch;
-	  font-size:1.5rem;
+	  width:20ch!important;
+	  font-size:1.5rem!important;
      }
     
      .n2{
-	     font-size:1.2rem;
+	     font-size:1.2rem!important;
      }
 	
      .nsSup{
-	min-height:128px;
+	min-height:128px!important;
 	}
 
 }
